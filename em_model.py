@@ -47,7 +47,7 @@ class EMR:
       # Generates a TrainOp which contains the information about optimization process - optimizer, loss function, etc
       self.network = regression(self.network,optimizer = 'momentum',metric = 'accuracy',loss = 'categorical_crossentropy')
       # Creates a model instance.
-      self.model = tflearn.DNN(self.network,checkpoint_path = 'model_1_atul',max_checkpoints = 1,tensorboard_verbose = 2)
+      self.model = tflearn.DNN(self.network,checkpoint_path = 'model_1_emotion',max_checkpoints = 1,tensorboard_verbose = 2)
       # Loads the model weights from the checkpoint
       self.load_model()
 
