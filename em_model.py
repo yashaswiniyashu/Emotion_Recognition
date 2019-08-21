@@ -64,8 +64,8 @@ class EMR:
     """
     Loads pre-trained model.
     """
-    if isfile("model_1_atul.tflearn.meta"):
-      self.model.load("model_1_atul.tflearn")
+    if isfile("model_1_emotion.tflearn.meta"):
+      self.model.load("model_1_emotion.tflearn")
       print('\n---> Pre-trained model loaded')
     else:
         print("---> Couldn't find model")
